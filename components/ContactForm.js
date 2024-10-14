@@ -26,7 +26,7 @@ const ContactForm = () => {
       <div className="w-full">
         <p className="text-[.6vw] mb-1">Twoje imię i nazwisko</p>
         <input
-          className="w-full bg-transparent border-[.5px] border-[#BC9555] font-semibold placeholder-white/70 p-2  placeholder:font-light"
+          className="w-full bg-transparent border-[.5px] border-[#BC9555] font-semibold placeholder-white/70 p-[.5vw]  placeholder:font-light"
           type="text"
           placeholder=""
           {...register("name", {
@@ -45,7 +45,7 @@ const ContactForm = () => {
       <div className="w-full mt-3">
         <p className="text-[.6vw] mb-1">Twoje adres E-mail</p>
         <input
-          className="w-full bg-transparent border-[.5px] border-[#BC9555] font-semibold placeholder-white/70 p-2  placeholder:font-light"
+          className="w-full bg-transparent border-[.5px] border-[#BC9555] font-semibold placeholder-white/70 p-[.5vw]  placeholder:font-light"
           type="text"
           placeholder=""
           {...register("email", {
@@ -64,7 +64,7 @@ const ContactForm = () => {
       <div className="w-full mt-3">
         <p className="text-[.6vw] mb-1">Wiadomość</p>
         <textarea
-          className="w-full bg-transparent border-[.5px] border-[#BC9555] font-semibold placeholder-white/70 p-2  placeholder:font-light"
+          className="w-full bg-transparent border-[.5px] border-[#BC9555] font-semibold placeholder-white/70 p-[.5vw]  placeholder:font-light"
           name="message"
           placeholder=""
           rows="4"
@@ -83,7 +83,7 @@ const ContactForm = () => {
         )}
       </div>
       <button
-        className="w-[16%] p-2 font-light text-[.8vw] text-[#BC9555]  border-[.5px] border-[#BC9555] hover:bg-[#BC9555] hover:text-black transition duration-300 text-center"
+        className="w-[16%] p-[.5vw] font-light text-[.8vw] text-[#BC9555]  border-[.5px] border-[#BC9555] hover:bg-[#BC9555] hover:text-black transition duration-300 text-center"
         type="submit"
       >
         wyślij
