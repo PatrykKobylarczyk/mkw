@@ -31,8 +31,8 @@ const PageLink = ({
 
   return (
     <Link
-      className={`${selectedPage === lowerCasePage ? "text-yellow-500" : ""}
-        hover:text-yellow-500 transition duration-500 ${
+      className={`${selectedPage === lowerCasePage ? "text-[#BC9555]" : ""}
+        hover:text-[#BC9555] transition duration-500 ${
           roboto.className
         } uppercase font-normal`}
       href={`#${lowerCasePage}`}
@@ -57,7 +57,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         {/* DESKTOP NAV */}
 
         <div className="flex items-center justify-between mx-auto w-full ">
-          <h4 className={`${playfair.className} text-3xl font-bold `}>MK</h4>
+          <h4 className={`${playfair.className} text-3xl font-bold text-white`}>
+            MK
+          </h4>
 
           {isAboveSmallScreens ? (
             <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">

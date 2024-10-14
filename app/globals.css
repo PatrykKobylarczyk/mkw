@@ -8,9 +8,25 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  body {
+    background-color: #1e1e1e;
+    color: #bfbebe;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: #bc9555;
+  }
+  p {
+    color: #bfbebe;
   }
 }

@@ -1,3 +1,8 @@
+import { MdFamilyRestroom } from "react-icons/md";
+import { BsBank2 } from "react-icons/bs";
+import { FaTruckMedical } from "react-icons/fa6";
+import { FaMoneyBillWave } from "react-icons/fa6";
+
 export const zakresSpraw = [
   {
     id: 0,
@@ -24,6 +29,7 @@ export const zakresSpraw = [
       "podział majątku wspólnego po rozwodzie",
       "ubezwłasnowolnienie",
     ],
+    icon: <MdFamilyRestroom />,
   },
   {
     id: 1,
@@ -43,6 +49,7 @@ export const zakresSpraw = [
       "stwierdzenie zgonu",
       "dział spadku",
     ],
+    icon: <MdFamilyRestroom />,
   },
   {
     id: 2,
@@ -63,6 +70,7 @@ export const zakresSpraw = [
       "spory o zasadność wypowiedzenia umowy kredytu",
       "polubowne restrukturyzacje zadłużeń",
     ],
+    icon: <BsBank2 />,
   },
   {
     id: 3,
@@ -82,6 +90,7 @@ export const zakresSpraw = [
       "roszczenia z tytułu rękojmi i gwarancji",
       "pozostałe spory o roszczenia pieniężne",
     ],
+    icon: <FaMoneyBillWave />,
   },
   {
     id: 4,
@@ -99,6 +108,7 @@ export const zakresSpraw = [
       "sprawy dotyczące naruszenia praw pacjenta",
       "sprawy karne o spowodowanie uszczerbku na zdrowiu spowodowanie śmierci",
     ],
+    icon: <FaTruckMedical />,
   },
   {
     id: 5,
@@ -115,5 +125,6 @@ export const zakresSpraw = [
       "spory o nienależyte wykonanie i niewykonanie umów",
       "sprawy pracownicze",
     ],
+    icon: <MdFamilyRestroom />,
   },
 ];
