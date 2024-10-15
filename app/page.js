@@ -10,6 +10,7 @@ import AboutUs from "@/components/About";
 // import { useEffect } from "react";
 import Title from "@/components/Title";
 import Contact from "@/components/Contact";
+import GoogleMap from "@/components/GoogleMap";
 
 export default function Home() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -59,6 +60,9 @@ export default function Home() {
       {/* kontakt */}
       <Title text="Kontakt" />
       <Contact />
+      <div className="w-full h-[50vh] bg-black">
+        <GoogleMap />
+      </div>
     </main>
   );
 }

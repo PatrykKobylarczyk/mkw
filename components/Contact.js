@@ -3,6 +3,7 @@ import { HiOutlinePhone } from "react-icons/hi2";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { Raleway } from "next/font/google";
 import ContactForm from "./ContactForm";
+import Map from "./GoogleMap";
 
 const raleway = Raleway({
   subsets: ["latin"],
