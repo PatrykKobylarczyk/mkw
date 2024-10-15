@@ -60,7 +60,7 @@ export default function Home() {
       {/* kontakt */}
       <Title text="Kontakt" />
       <Contact />
-      <div className="w-full h-[50vh] bg-black">
+      <div className="w-full h-[70vh] bg-black">
         <GoogleMap />
       </div>
     </main>

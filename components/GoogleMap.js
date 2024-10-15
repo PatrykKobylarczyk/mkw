@@ -24,7 +24,7 @@ const GoogleMap = () => {
 
       const mapOptions = {
         center: position,
-        zoom: 17,
+        zoom: 15,
         mapId: "NEXT_MAPID",
       };
 
