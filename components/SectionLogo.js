@@ -3,9 +3,13 @@ import React from "react";
 const SectionLogo = () => {
   return (
     <section className="relative w-full h-screen flex flex-col items-center justify-center mb-[15vw]">
-      <h1 className="text-8xl font-bold text-[#FFF]">MK</h1>
-      <p className="font-light">Monika Kujawa - Adwokat</p>
-      <p className="font-light">Magdalena Kopera - Radca Prawny</p>
+      <h1 className="text-[15vw] md:text-[8vw] font-bold text-[#FFF]">MK</h1>
+      <p className="font-light text-[4vw] md:text-[1.3vw]">
+        Monika Kujawa - Adwokat
+      </p>
+      <p className="font-light text-[4vw] md:text-[1.3vw]">
+        Magdalena Kopera - Radca Prawny
+      </p>
       <div className="absolute bottom-[5vw] left-1/2 -translate-x-1/1 ">
         <svg
           className="scroller"
