@@ -11,11 +11,13 @@ import AboutUs from "@/components/About";
 import Title from "@/components/Title";
 import Contact from "@/components/Contact";
 import GoogleMap from "@/components/GoogleMap";
+import Title2 from "@/components/Titile2";
 
 export default function Home() {
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
 
   // const posts = await getBlogPosts()
   // useEffect(()=>{console.log(posts)},[posts])
@@ -50,7 +52,13 @@ export default function Home() {
       <AboutUs />
 
       {/* zakres spraw */}
-      <Title text="Zakres spraw" />
+      <div className="pt-[15vw] md:pt-[5vw]">
+        {isAboveSmallScreens ? (
+          <Title text="Zakres spraw" />
+        ) : (
+          <Title2 text="Zakres spraw" />
+        )}
+      </div>
       <div className="w-full mb-[10vw]">
         <motion.div onViewportEnter={() => setSelectedPage("projects")}>
           <Projects />

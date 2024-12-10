@@ -25,8 +25,8 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, thumb, image }) => {
-  const overlayStyles = `absolute opacity-100 hover:opacity-70 transition duration-500 bg-grey z-30  text-deep-blue cursor-pointer w-full h-full p-12 box-border`; // Dodano p-4, aby dodać padding wewnątrz kontenera
+const Project = ({ title, thumb, icon }) => {
+  const overlayStyles = `absolute opacity-100 hover:opacity-70 transition duration-500 bg-grey z-30  text-deep-blue cursor-pointer w-full h-full p-[3vw] sm:p-[4vw] lg:p-[2vw] box-border`; // Dodano p-4, aby dodać padding wewnątrz kontenera
   const link = title.split(" ").join("-").toLowerCase();
 
   return (
@@ -36,7 +36,9 @@ const Project = ({ title, thumb, image }) => {
     >
       <div className={overlayStyles}>
         <div className="w-[22%] h-[22%] bg-[#BC9555] flex justify-center items-center mb-10">
-          {/* {image} */}
+          <span className="text-[#1e1e1e] z-10 text-[5vw] md:text-[1.5vw]">
+            {icon}
+          </span>
         </div>
         <p
           className={`text-[5vw] md:text-[2vw] lg:text-[1.2vw] font-bold mb-6 max-w-full text-[#BC9555]`}
@@ -47,17 +49,17 @@ const Project = ({ title, thumb, image }) => {
           {thumb.map((t, index) => (
             <p
               key={index}
-              className=" text-[2vw] md:text-[1.2vw] lg:text-[.9vw] max-w-full font-extralight "
+              className=" text-[2.6vw] md:text-[1.2vw] lg:text-[.9vw] max-w-full font-extralight "
             >
               - {t}
             </p>
           ))}
         </div>
         <Link href={link}>
-          <p className="mt-6 text-[2vw] md:text-[1.2vw] lg:text-[.9vw] text-[#BC9555] flex">
+          <p className="mt-6 text-[3vw] md:text-[1.2vw] lg:text-[.9vw] text-[#BC9555] flex">
             <span>więcej</span>
             <svg
-              className="ml-5 translate-y-2"
+              className="ml-5 translate-y-[1vw]  md:translate-y-[.5vw]"
               width="49"
               height="8"
               viewBox="0 0 49 8"
@@ -79,21 +81,27 @@ const Project = ({ title, thumb, image }) => {
 
 const Projects = () => {
   return (
-    <section id="projects" className="pt-32 pb-32 min-h-screen">
+    <section id="projects" className="pt-16 md:pt-32 pb-32 min-h-screen">
       {/* HEADINGS */}
 
       {/* PROJECTS */}
       <div className="flex justify-center">
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5 }}
           variants={container}
         >
-          {zakresSpraw.map(({ title, thumb }, index) => (
-            <Project key={index} title={title} image={project3} thumb={thumb} />
+          {zakresSpraw.map(({ title, thumb, icon }, index) => (
+            <Project
+              key={index}
+              title={title}
+              image={project3}
+              thumb={thumb}
+              icon={icon}
+            />
           ))}
         </motion.div>
       </div>

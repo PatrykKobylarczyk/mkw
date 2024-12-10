@@ -21,10 +21,10 @@ const ContactForm = () => {
       onSubmit={onSubmit}
       action="https://formsubmit.co/patryk.kobylarczyk@gmail.com"
       method="POST"
-      className="max-w-2xl z-20 mt-10 lg:mx-0 flex flex-col justify-center items-end gap-3"
+      className="w-[80vw] md:w-auto md:max-w-2xl z-20 mt-10 lg:mx-0 flex flex-col justify-center items-end gap-3"
     >
       <div className="w-full">
-        <p className="text-[.6vw] mb-1">Twoje imię i nazwisko</p>
+        <p className="text-[2vw] md:text-[.6vw] mb-1">Twoje imię i nazwisko</p>
         <input
           className="w-full bg-transparent border-[.5px] border-[#BC9555] font-semibold placeholder-white/70 p-[.5vw]  placeholder:font-light"
           type="text"
@@ -43,7 +43,7 @@ const ContactForm = () => {
         )}
       </div>
       <div className="w-full mt-3">
-        <p className="text-[.6vw] mb-1">Twoje adres E-mail</p>
+        <p className="text-[2vw] md:text-[.6vw] mb-1">Twoje adres E-mail</p>
         <input
           className="w-full bg-transparent border-[.5px] border-[#BC9555] font-semibold placeholder-white/70 p-[.5vw]  placeholder:font-light"
           type="text"
@@ -62,7 +62,7 @@ const ContactForm = () => {
       </div>
 
       <div className="w-full mt-3">
-        <p className="text-[.6vw] mb-1">Wiadomość</p>
+        <p className="text-[2vw] md:text-[.6vw] mb-1">Wiadomość</p>
         <textarea
           className="w-full bg-transparent border-[.5px] border-[#BC9555] font-semibold placeholder-white/70 p-[.5vw]  placeholder:font-light"
           name="message"
@@ -83,7 +83,7 @@ const ContactForm = () => {
         )}
       </div>
       <button
-        className="w-[16%] p-[.5vw] font-light text-[.8vw] text-[#BC9555]  border-[.5px] border-[#BC9555] hover:bg-[#BC9555] hover:text-black transition duration-300 text-center"
+        className="w-[20%] p-[2vw] md:p-[.5vw] font-light text-[2vw] md:text-[.8vw] text-[#BC9555]  border-[.5px] border-[#BC9555] hover:bg-[#BC9555] hover:text-black transition duration-300 text-center"
         type="submit"
       >
         wyślij

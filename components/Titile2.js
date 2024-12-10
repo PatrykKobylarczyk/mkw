@@ -6,7 +6,7 @@ const raleway = Raleway({
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const Title = ({ text }) => {
+const Title2 = ({ text }) => {
   return (
     <div
       className={`${raleway.className} relative pb-24 flex items-center ml-[10vw]`}
@@ -15,7 +15,7 @@ const Title = ({ text }) => {
         {text}
       </h2>
       <div className="h-full ml-[5vw] md:ml-[3vw]">
-        <p className="text-[#BC9555] text-[5vw] md:text-[3.2vw] font-medium">
+        <p className="text-[#BC9555] text-[5vw] md:text-[3.2vw] font-medium mt-[25vw]">
           {text}
         </p>
         <span className="w-[16vw] h-[.5px] bg-[#BC9555] block"></span>
@@ -24,4 +24,4 @@ const Title = ({ text }) => {
   );
 };
 
-export default Title;
+export default Title2;

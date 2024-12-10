@@ -13,46 +13,53 @@ const raleway = Raleway({
 const Contact = () => {
   return (
     <section
-      className={`w-full mt-[10vw] flex min-h-96 bg-[#2D2D2D] ${raleway.className}`}
+      className={`w-full mt-[10vw] flex flex-col md:flex-row min-h-96 bg-[#2D2D2D] ${raleway.className}`}
     >
-      <div className="w-1/2 p-[10vw]">
+      <div className="w-full md:w-1/2 p-[10vw]">
         <div className="mb-8">
-          <p className="text-[#BC9555] text-[.9vw]">Kancelaria Adokacka</p>
-          <span className="w-[16vw] h-[.5px] bg-[#BC9555] block my-3"></span>
-          <h3 className="text-[#BFBEBE] text-[1.3vw] mb-2 font-medium">
+          <p className="text-[#BC9555] text-[5vw] md:text-[.9vw]">
+            Kancelaria Adokacka
+          </p>
+          <span className="w-[16vw] h-[.5px] bg-[#BC9555] block mt-3 mb-10 md:mb-3"></span>
+          <h3 className="text-[#BFBEBE] text-[5vw] md:text-[1.3vw] mb-2 font-medium">
             Monika Kujawa
           </h3>
-          <div className="flex">
+          <div className="flex text-[4vw] md:text-[.9vw]">
             <HiOutlinePhone className="translate-y-1 mr-3" />
             <a href="tel:+48513023684">+48 513023684 </a>
           </div>
         </div>
         <div className="mb-8">
-          <p className="text-[#BC9555] text-[.9vw]">
+          <p className="text-[#BC9555] text-[5vw] md:text-[.9vw]">
             Kancelaria Radcy Prawnego
           </p>
-          <span className="w-[16vw] h-[.5px] bg-[#BC9555] block my-3"></span>
-          <h3 className="text-[#BFBEBE] text-[1.3vw] mb-2 font-medium">
+          <span className="w-[16vw] h-[.5px] bg-[#BC9555] block mt-3 mb-10 md:mb-3"></span>
+          <h3 className="text-[#BFBEBE] text-[5vw] md:text-[1.3vw] mb-2 font-medium">
             Magdalena Kopera
           </h3>
-          <div className="flex">
+          <div className="flex text-[4vw] md:text-[.9vw]">
             <HiOutlinePhone className="translate-y-1 mr-3" />
             <a href="tel:+48513023684">+48 600709094 </a>
           </div>
         </div>
         <div className="flex">
           <IoMailOpenOutline className="translate-y-1 mr-3" />
-          <a href="mailto:mk@gmail.com" className="mb-8 text-[.9vw]">
+          <a
+            href="mailto:mk@gmail.com"
+            className="mb-8 text-[4vw] md:text-[.9vw]"
+          >
             mk@gmail.com
           </a>
         </div>
-        <div className="text-[.9vw] mb-2 font-medium">
+        <div className="text-[4vw] md:text-[.9vw] mb-2 font-medium">
           <p>ul. Tuwima 71 lok. 7</p>
           <p>90-031 Łódź</p>
         </div>
       </div>
-      <div className="w-1/2 p-[10vw]">
-        <h2 className="text-[2vw] font-medium">Czekamy na Twoja wiadomość</h2>
+      <div className="w-full md:w-1/2 p-[10vw] pb-[20vw] md:pb-[10vw]">
+        <h2 className="text-[4vw] md:text-[2vw] font-medium">
+          Czekamy na Twoja wiadomość
+        </h2>
         <ContactForm />
       </div>
     </section>

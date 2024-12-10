@@ -10,7 +10,7 @@ const SectionLogo = () => {
       <p className="font-light text-[4vw] md:text-[1.3vw]">
         Magdalena Kopera - Radca Prawny
       </p>
-      <div className="absolute bottom-[5vw] left-1/2 -translate-x-1/1 ">
+      <div className="absolute bottom-[15vw] md:bottom-[5vw] left-1/2 -translate-x-1/1 ">
         <svg
           className="scroller"
           width="8"

@@ -8,7 +8,7 @@ import { Squash as Hamburger } from "hamburger-react";
 import Image from "next/image";
 import { navbarData } from "@/data/NavbarData";
 
-import { Roboto, Playfair_Display } from "next/font/google";
+import { Roboto, Playfair_Display, Raleway } from "next/font/google";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -19,6 +19,10 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "500", "700", "900"],
   variable: "--font-roboto",
+});
+const raleway = Raleway({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 const PageLink = ({
@@ -33,7 +37,7 @@ const PageLink = ({
     <Link
       className={`${selectedPage === lowerCasePage ? "text-[#BC9555]" : ""}
         hover:text-[#BC9555] transition duration-500 ${
-          roboto.className
+          raleway.className
         } uppercase font-normal`}
       href={`#${lowerCasePage}`}
       onClick={() => {
@@ -87,14 +91,14 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         <AnimatePresence mode="wait">
           {!isAboveSmallScreens && isMenuToggled && (
             <motion.div
-              className="fixed right-0 bottom-0 h-screen flex justify-center items-center bg-white w-full"
+              className={`fixed right-0 bottom-0 h-screen flex justify-center items-center bg-[#1e1e1e] w-full ${raleway.className}`}
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ ease: "easeInOut" }}
             >
               {/* MENU ITEMS */}
-              <div className="flex flex-col gap-10 text-xl text-black">
+              <div className="flex flex-col gap-10 text-xl text-white">
                 {navbarData.map(({ page, id }) => (
                   <PageLink
                     page={page}
